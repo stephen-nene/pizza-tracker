@@ -7,7 +7,7 @@ Pizza.destroy_all
 10.times do
     Pizza.create(
       name: Faker::Food.dish,
-      ingredients: Faker::Food.ingredients(number: 3..4).join(", ")
+      ingredients: Faker::Food.ingredients
     )
   end
 
