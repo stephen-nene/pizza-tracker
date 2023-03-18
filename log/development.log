@@ -1060,3 +1060,23 @@ Migrating to AddIngredientsToPizzas (20230318202322)
   [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
   [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 26.54], ["restaurant_id", 10], ["pizza_id", 10], ["created_at", "2023-03-18 20:29:00.796203"], ["updated_at", "2023-03-18 20:29:00.796203"]]
   [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/" for 127.0.0.1 at 2023-03-18 23:34:02 +0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /var/lib/gems/3.0.0/gems/railties-6.1.7.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/3.0.0/gems/railties-6.1.7.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 8.5ms | Allocations: 536)
+Completed 200 OK in 25ms (Views: 14.1ms | ActiveRecord: 0.0ms | Allocations: 4490)
+
+
+Started GET "/index" for 127.0.0.1 at 2023-03-18 23:34:08 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/index"):
+  
+Started GET "/pizzas" for 127.0.0.1 at 2023-03-18 23:34:16 +0300
+Processing by PizzasController#index as HTML
+  [1m[36mPizza Load (0.5ms)[0m  [1m[34mSELECT "pizzas".* FROM "pizzas"[0m
+  ↳ app/controllers/pizzas_controller.rb:5:in `index'
+Completed 200 OK in 26ms (Views: 19.7ms | ActiveRecord: 2.2ms | Allocations: 5998)
+
+
