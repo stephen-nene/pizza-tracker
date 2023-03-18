@@ -5,11 +5,12 @@ Pizza.destroy_all
 
 # Seed Pizzas table
 10.times do
-    Pizza.create(
-      name: Faker::Food.dish,
-      ingredients: Faker::Food.ingredients(number: rand(3..4))
-    )
-  end
+  Pizza.create(
+    name: Faker::Food.dish,
+    ingredients: Array(Faker::Food.ingredients(number: rand(3..4))).join(', ')
+  )
+end
+
 
 # Seed Restaurants table
 10.times do
