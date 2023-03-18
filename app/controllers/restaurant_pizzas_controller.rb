@@ -4,7 +4,7 @@ class RestaurantPizzasController < ApplicationController
   def index
     @restaurant = Restaurant.find(params[:restaurant_id])
     @pizzas = @restaurant.pizzas
-    render json: @pizzas, only: [ :name, :ingredients]
+    render json: @pizzas, only: [:id, :name, :ingredients]
   end
 
 

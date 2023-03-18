@@ -1401,3 +1401,31 @@ Processing by RestaurantPizzasController#index as HTML
 Completed 200 OK in 11ms (Views: 7.8ms | ActiveRecord: 0.6ms | Allocations: 2322)
 
 
+Started GET "/pizzas" for 127.0.0.1 at 2023-03-18 23:52:46 +0300
+Processing by PizzasController#index as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/pizzas_controller.rb:5:in `index'
+  [1m[36mPizza Load (0.4ms)[0m  [1m[34mSELECT "pizzas".* FROM "pizzas"[0m
+  ↳ app/controllers/pizzas_controller.rb:5:in `index'
+Completed 200 OK in 23ms (Views: 20.5ms | ActiveRecord: 1.7ms | Allocations: 5780)
+
+
+Started GET "/pizzas" for 127.0.0.1 at 2023-03-18 23:53:08 +0300
+  
+SyntaxError (/home/stevonene/development/moringa/projects/pizza-tracker/app/controllers/pizzas_controller.rb:5: syntax error, unexpected ','
+    render json: @pizzas, , only: [ :id, :name, :ingredi...
+                          ^
+):
+  
+app/controllers/pizzas_controller.rb:5: syntax error, unexpected ','
+app/controllers/pizzas_controller.rb:5: syntax error, unexpected ','
+app/controllers/pizzas_controller.rb:5: syntax error, unexpected ','
+Started GET "/pizzas" for 127.0.0.1 at 2023-03-18 23:53:14 +0300
+Processing by PizzasController#index as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/pizzas_controller.rb:5:in `index'
+  [1m[36mPizza Load (0.4ms)[0m  [1m[34mSELECT "pizzas".* FROM "pizzas"[0m
+  ↳ app/controllers/pizzas_controller.rb:5:in `index'
+Completed 200 OK in 22ms (Views: 18.8ms | ActiveRecord: 2.1ms | Allocations: 5536)
+
+
