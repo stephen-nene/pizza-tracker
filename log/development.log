@@ -1093,3 +1093,311 @@ Processing by RestaurantsController#index as HTML
 Completed 200 OK in 30ms (Views: 20.7ms | ActiveRecord: 2.4ms | Allocations: 7280)
 
 
+Started GET "/restaurants" for 127.0.0.1 at 2023-03-18 23:39:13 +0300
+Processing by RestaurantsController#index as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/restaurants_controller.rb:5:in `index'
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/controllers/restaurants_controller.rb:5:in `index'
+Completed 200 OK in 17ms (Views: 12.1ms | ActiveRecord: 1.9ms | Allocations: 6817)
+
+
+Started GET "/restaurants" for 127.0.0.1 at 2023-03-18 23:39:24 +0300
+Processing by RestaurantsController#index as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/restaurants_controller.rb:5:in `index'
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/controllers/restaurants_controller.rb:5:in `index'
+Completed 200 OK in 22ms (Views: 16.3ms | ActiveRecord: 2.0ms | Allocations: 6824)
+
+
+Started GET "/restaurants" for 127.0.0.1 at 2023-03-18 23:39:27 +0300
+Processing by RestaurantsController#index as HTML
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/controllers/restaurants_controller.rb:5:in `index'
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.3ms | Allocations: 1835)
+
+
+Started GET "/restaurants" for 127.0.0.1 at 2023-03-18 23:41:09 +0300
+Processing by RestaurantsController#index as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/restaurants_controller.rb:5:in `index'
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/controllers/restaurants_controller.rb:5:in `index'
+Completed 200 OK in 20ms (Views: 14.7ms | ActiveRecord: 1.9ms | Allocations: 6803)
+
+
+Started GET "/restaurants" for 127.0.0.1 at 2023-03-18 23:41:40 +0300
+Processing by RestaurantsController#index as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/restaurants_controller.rb:5:in `index'
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/controllers/restaurants_controller.rb:5:in `index'
+Completed 200 OK in 16ms (Views: 11.6ms | ActiveRecord: 1.1ms | Allocations: 6800)
+
+
+Started GET "/restaurants" for 127.0.0.1 at 2023-03-18 23:41:42 +0300
+Processing by RestaurantsController#index as HTML
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/controllers/restaurants_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.3ms | Allocations: 1820)
+
+
+Started GET "/restaurants/1" for 127.0.0.1 at 2023-03-18 23:42:02 +0300
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for RestaurantsController
+Did you mean?  index):
+  
+actionpack (6.1.7.3) lib/abstract_controller/base.rb:160:in `process'
+actionview (6.1.7.3) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.7.3) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.7.3) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.7.3) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.7.3) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.7.3) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.7.3) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.7.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.7.3) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.6.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.6.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.6.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.6.4) lib/rack/head.rb:12:in `call'
+actionpack (6.1.7.3) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.7.3) lib/action_dispatch/http/content_security_policy.rb:19:in `call'
+rack (2.2.6.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.6.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.7.3) lib/action_dispatch/middleware/cookies.rb:697:in `call'
+activerecord (6.1.7.3) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.7.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.7.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.7.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.7.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.7.3) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.7.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.7.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.7.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.7.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.7.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.7.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.7.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.7.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.7.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.4) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.7.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.7.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.3) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.6.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.7.3) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+railties (6.1.7.3) lib/rails/engine.rb:539:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/restaurant/1" for 127.0.0.1 at 2023-03-18 23:42:12 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/restaurant/1"):
+  
+Started GET "/restaurant/1" for 127.0.0.1 at 2023-03-18 23:42:30 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/restaurant/1"):
+  
+Started GET "/restaurants/1" for 127.0.0.1 at 2023-03-18 23:42:36 +0300
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for RestaurantsController
+Did you mean?  index):
+  
+actionpack (6.1.7.3) lib/abstract_controller/base.rb:160:in `process'
+actionview (6.1.7.3) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.7.3) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.7.3) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.7.3) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.7.3) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.7.3) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.7.3) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.7.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.7.3) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.6.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.6.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.6.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.6.4) lib/rack/head.rb:12:in `call'
+actionpack (6.1.7.3) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.7.3) lib/action_dispatch/http/content_security_policy.rb:19:in `call'
+rack (2.2.6.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.6.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.7.3) lib/action_dispatch/middleware/cookies.rb:697:in `call'
+activerecord (6.1.7.3) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.7.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.7.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.7.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.7.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.7.3) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.7.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.7.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.7.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.7.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.7.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.7.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.7.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.7.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.7.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.4) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.7.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.7.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.3) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.6.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.7.3) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+railties (6.1.7.3) lib/rails/engine.rb:539:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/restaurant_pizza" for 127.0.0.1 at 2023-03-18 23:43:23 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/restaurant_pizza"):
+  
+Started GET "/restaurants" for 127.0.0.1 at 2023-03-18 23:43:59 +0300
+Processing by RestaurantsController#index as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/restaurants_controller.rb:5:in `index'
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/controllers/restaurants_controller.rb:5:in `index'
+Completed 200 OK in 34ms (Views: 28.7ms | ActiveRecord: 14.2ms | Allocations: 6556)
+
+
+Started GET "/restaurants/1" for 127.0.0.1 at 2023-03-18 23:44:15 +0300
+  
+SyntaxError (/home/stevonene/development/moringa/projects/pizza-tracker/app/controllers/restaurants_controller.rb:10: syntax error, unexpected instance variable, expecting `end'
+    render :json @restaurants
+                 ^~~~~~~~~~~~
+):
+  
+app/controllers/restaurants_controller.rb:10: syntax error, unexpected instance variable, expecting `end'
+app/controllers/restaurants_controller.rb:10: syntax error, unexpected instance variable, expecting `end'
+app/controllers/restaurants_controller.rb:10: syntax error, unexpected instance variable, expecting `end'
+Started PUT "/__web_console/repl_sessions/f787086b0ef50e338f4c6fdd387ccb12" for 127.0.0.1 at 2023-03-18 23:44:55 +0300
+Started PUT "/__web_console/repl_sessions/f787086b0ef50e338f4c6fdd387ccb12" for 127.0.0.1 at 2023-03-18 23:44:57 +0300
+Started PUT "/__web_console/repl_sessions/f787086b0ef50e338f4c6fdd387ccb12" for 127.0.0.1 at 2023-03-18 23:44:59 +0300
+Started GET "/restaurants/1" for 127.0.0.1 at 2023-03-18 23:45:23 +0300
+  
+SyntaxError (/home/stevonene/development/moringa/projects/pizza-tracker/app/controllers/restaurants_controller.rb:10: syntax error, unexpected instance variable, expecting `end'
+    render :json @restaurants
+                 ^~~~~~~~~~~~
+):
+  
+app/controllers/restaurants_controller.rb:10: syntax error, unexpected instance variable, expecting `end'
+app/controllers/restaurants_controller.rb:10: syntax error, unexpected instance variable, expecting `end'
+app/controllers/restaurants_controller.rb:10: syntax error, unexpected instance variable, expecting `end'
+Started GET "/restaurants" for 127.0.0.1 at 2023-03-18 23:45:31 +0300
+  
+SyntaxError (/home/stevonene/development/moringa/projects/pizza-tracker/app/controllers/restaurants_controller.rb:10: syntax error, unexpected instance variable, expecting `end'
+    render :json @restaurants
+                 ^~~~~~~~~~~~
+):
+  
+app/controllers/restaurants_controller.rb:10: syntax error, unexpected instance variable, expecting `end'
+app/controllers/restaurants_controller.rb:10: syntax error, unexpected instance variable, expecting `end'
+app/controllers/restaurants_controller.rb:10: syntax error, unexpected instance variable, expecting `end'
+Started GET "/restaurants" for 127.0.0.1 at 2023-03-18 23:45:33 +0300
+  
+SyntaxError (/home/stevonene/development/moringa/projects/pizza-tracker/app/controllers/restaurants_controller.rb:10: syntax error, unexpected instance variable, expecting `end'
+    render :json @restaurants
+                 ^~~~~~~~~~~~
+):
+  
+app/controllers/restaurants_controller.rb:10: syntax error, unexpected instance variable, expecting `end'
+app/controllers/restaurants_controller.rb:10: syntax error, unexpected instance variable, expecting `end'
+app/controllers/restaurants_controller.rb:10: syntax error, unexpected instance variable, expecting `end'
+Started GET "/restaurants/1" for 127.0.0.1 at 2023-03-18 23:45:44 +0300
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 12ms (Allocations: 4325)
+
+
+  
+NameError (undefined local variable or method `nparams' for #<RestaurantsController:0x00000000013268>
+Did you mean?  params
+               params=):
+  
+app/controllers/restaurants_controller.rb:9:in `show'
+Started GET "/restaurants/1" for 127.0.0.1 at 2023-03-18 23:45:58 +0300
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/restaurants_controller.rb:9:in `show'
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:9:in `show'
+Completed 200 OK in 21ms (Views: 1.3ms | ActiveRecord: 2.3ms | Allocations: 6416)
+
+
+Started GET "/restaurants/1" for 127.0.0.1 at 2023-03-18 23:46:24 +0300
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/restaurants_controller.rb:9:in `show'
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:9:in `show'
+Completed 200 OK in 23ms (Views: 0.9ms | ActiveRecord: 1.6ms | Allocations: 5705)
+
+
+Started GET "/restaurant_pizza" for 127.0.0.1 at 2023-03-18 23:46:58 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/restaurant_pizza"):
+  
+Started GET "/restaurants/1/pizzas" for 127.0.0.1 at 2023-03-18 23:48:46 +0300
+  
+ActionController::RoutingError (uninitialized constant RestaurantPizzasController
+Did you mean?  RestaurantPizzaController
+               RestaurantsController):
+  
+Started GET "/restaurants/1/pizzas" for 127.0.0.1 at 2023-03-18 23:50:29 +0300
+  
+ActionController::RoutingError (uninitialized constant RestaurantPizzasController
+Did you mean?  RestaurantPizzaController
+               RestaurantsController):
+  
+Started GET "/restaurants/1/pizzas" for 127.0.0.1 at 2023-03-18 23:50:33 +0300
+  
+ActionController::RoutingError (uninitialized constant RestaurantPizzasController
+Did you mean?  RestaurantPizzaController
+               RestaurantsController):
+  
+Started GET "/restaurants/1/pizzas" for 127.0.0.1 at 2023-03-18 23:51:05 +0300
+Processing by RestaurantPizzasController#index as HTML
+  Parameters: {"restaurant_id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/restaurant_pizzas_controller.rb:4:in `index'
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/restaurant_pizzas_controller.rb:4:in `index'
+  [1m[36mPizza Load (0.4ms)[0m  [1m[34mSELECT "pizzas".* FROM "pizzas" INNER JOIN "restaurant_pizzas" ON "pizzas"."id" = "restaurant_pizzas"."pizza_id" WHERE "restaurant_pizzas"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  ↳ app/controllers/restaurant_pizzas_controller.rb:6:in `index'
+Completed 200 OK in 70ms (Views: 24.9ms | ActiveRecord: 4.2ms | Allocations: 19757)
+
+
+Started GET "/restaurants/3/pizzas" for 127.0.0.1 at 2023-03-18 23:51:12 +0300
+Processing by RestaurantPizzasController#index as HTML
+  Parameters: {"restaurant_id"=>"3"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/restaurant_pizzas_controller.rb:4:in `index'
+  [1m[36mPizza Load (0.4ms)[0m  [1m[34mSELECT "pizzas".* FROM "pizzas" INNER JOIN "restaurant_pizzas" ON "pizzas"."id" = "restaurant_pizzas"."pizza_id" WHERE "restaurant_pizzas"."restaurant_id" = ?[0m  [["restaurant_id", 3]]
+  ↳ app/controllers/restaurant_pizzas_controller.rb:6:in `index'
+Completed 200 OK in 11ms (Views: 7.8ms | ActiveRecord: 0.6ms | Allocations: 2322)
+
+
