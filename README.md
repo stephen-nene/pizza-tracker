@@ -40,6 +40,17 @@
     ```
 6. Navigate to your **[localhost](http://localhost:3000/)** and try out the endpoints
 
+# Tables
+
+| Pizzas|      Restaurant| RestaurantPizzas|
+|-|  -|-|
+|id (**pk**)|id (**pk**) | id (**pk**)|
+|name|name | pizza_id (**FK**)   |
+|ingredients|address| restaurant_id (**FK**)|
+
+-This diagram shows the relationships between the `Pizzas`, `Restaurants`, and `RestaurantPizzas` tables. The `Pizzas` table has a one-to-many relationship with the `RestaurantPizzas` table, as each `pizza` can be sold at multiple `restaurants`. Similarly, the `Restaurants` table also has a one-to-many relationship with the `RestaurantPizzas` table, as each restaurant can sell multiple pizzas. The `RestaurantPizzas` table acts as a bridge table between `Pizzas` and `Restaurants`, allowing for a many-to-many relationship between them.
+
+
 
 # Routes
 
@@ -71,3 +82,9 @@
 
 # License
  - **NeneCorp** <span>&copy;</span>
+
+
+
+
+
+
