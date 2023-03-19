@@ -10,5 +10,5 @@ Rails.application.routes.draw do
   end
 
   # restaurant pizzas
-  resources :restaurant_pizzas, only: [:create]
+  resources :restaurant_pizzas, only: [:create, :destroy]
 end

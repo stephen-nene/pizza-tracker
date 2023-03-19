@@ -10426,3 +10426,53 @@ Processing by RestaurantsController#destroy as */*
 Completed 204 No Content in 59ms (ActiveRecord: 5.7ms | Allocations: 10972)
 
 
+Started GET "/restaurant_pizzas" for ::1 at 2023-03-19 21:11:19 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/restaurant_pizzas"):
+  
+Started POST "/restaurant_pizzas" for 127.0.0.1 at 2023-03-19 21:12:52 +0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by RestaurantPizzasController#create as */*
+  Parameters: {"price"=>53.55, "pizza_id"=>244, "restaurant_id"=>4, "restaurant_pizza"=>{"price"=>53.55, "restaurant_id"=>4, "pizza_id"=>244}}
+  [1m[36mRestaurant Load (0.6ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/restaurant_pizzas_controller.rb:40:in `create'
+  [1m[36mPizza Load (0.4ms)[0m  [1m[34mSELECT "pizzas".* FROM "pizzas" WHERE "pizzas"."id" = ? LIMIT ?[0m  [["id", 244], ["LIMIT", 1]]
+  ↳ app/controllers/restaurant_pizzas_controller.rb:41:in `create'
+Completed 422 Unprocessable Entity in 40ms (Views: 1.2ms | ActiveRecord: 2.4ms | Allocations: 5798)
+
+
+Started POST "/restaurant_pizzas" for 127.0.0.1 at 2023-03-19 21:13:02 +0300
+Processing by RestaurantPizzasController#create as */*
+  Parameters: {"price"=>53.55, "pizza_id"=>2, "restaurant_id"=>4, "restaurant_pizza"=>{"price"=>53.55, "restaurant_id"=>4, "pizza_id"=>2}}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/restaurant_pizzas_controller.rb:40:in `create'
+  [1m[36mPizza Load (0.2ms)[0m  [1m[34mSELECT "pizzas".* FROM "pizzas" WHERE "pizzas"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/restaurant_pizzas_controller.rb:41:in `create'
+  [1m[36mCACHE Restaurant Load (0.0ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/restaurant_pizzas_controller.rb:51:in `create'
+  [1m[36mCACHE Pizza Load (0.0ms)[0m  [1m[34mSELECT "pizzas".* FROM "pizzas" WHERE "pizzas"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/restaurant_pizzas_controller.rb:51:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/restaurant_pizzas_controller.rb:51:in `create'
+  [1m[36mRestaurantPizza Create (0.8ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 53.55], ["restaurant_id", 4], ["pizza_id", 2], ["created_at", "2023-03-19 18:13:02.547434"], ["updated_at", "2023-03-19 18:13:02.547434"]]
+  ↳ app/controllers/restaurant_pizzas_controller.rb:51:in `create'
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/restaurant_pizzas_controller.rb:51:in `create'
+Completed 200 OK in 51ms (Views: 0.4ms | ActiveRecord: 5.4ms | Allocations: 12825)
+
+
+Started DELETE "/restaurant_pizzas/101" for 127.0.0.1 at 2023-03-19 21:13:25 +0300
+Processing by RestaurantPizzasController#destroy as */*
+  Parameters: {"id"=>"101"}
+  [1m[36mRestaurantPizza Load (0.3ms)[0m  [1m[34mSELECT "restaurant_pizzas".* FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ? LIMIT ?[0m  [["id", 101], ["LIMIT", 1]]
+  ↳ app/controllers/restaurant_pizzas_controller.rb:60:in `destroy'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/restaurant_pizzas_controller.rb:62:in `destroy'
+  [1m[36mRestaurantPizza Destroy (0.6ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 101]]
+  ↳ app/controllers/restaurant_pizzas_controller.rb:62:in `destroy'
+  [1m[36mTRANSACTION (6.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/restaurant_pizzas_controller.rb:62:in `destroy'
+No template found for RestaurantPizzasController#destroy, rendering head :no_content
+Completed 204 No Content in 23ms (ActiveRecord: 7.3ms | Allocations: 5087)
+
+

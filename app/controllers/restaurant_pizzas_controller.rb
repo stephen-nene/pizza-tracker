@@ -55,6 +55,16 @@ class RestaurantPizzasController < ApplicationController
     end
   end
 
+  # DELETE /restaurant_pizza/:id
+  def destroy
+    @restaurant_pizza = RestaurantPizza.find_by(id: params[:id])
+    if @restaurant_pizza
+      @restaurant_pizza.destroy
+    else
+      render json: { error: 'Restaurant pizza not found' }, status: :not_found
+    end
+  end
+
   private
 
   def pizza_params
