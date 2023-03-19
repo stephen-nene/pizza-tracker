@@ -47,8 +47,6 @@
 ### A. <u>pizza</u>
 
 1. ` GET /pizzas`
-
-
 2.
 
 
@@ -63,4 +61,6 @@
 
 ### C. <u>RestaurantPizza</u>
 1. `GET /restaurants/:id/pizzas`
+2. `GET /restaurants/:id/pizzas/:id`
+3. `POST /restaurant_pizzas`
 

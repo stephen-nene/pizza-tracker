@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   resources :restaurants, only: [:index, :show, :destroy] do
     resources :pizzas, only: [:index, :show], controller: 'restaurant_pizzas'
   end
-  resources :pizzas, only: [:index]
+  resources :pizzas, only: [:index, :show]
   resources :restaurant_pizzas, only: [:create, :destroy]
 
 end

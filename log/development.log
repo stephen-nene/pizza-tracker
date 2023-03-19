@@ -5721,3 +5721,24 @@ Processing by RestaurantPizzasController#create as */*
 Completed 422 Unprocessable Entity in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 989)
 
 
+Started GET "/pizzas" for ::1 at 2023-03-19 15:03:43 +0300
+Processing by PizzasController#index as HTML
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/pizzas_controller.rb:6:in `index'
+  [1m[36mPizza Load (0.1ms)[0m  [1m[34mSELECT "pizzas".* FROM "pizzas"[0m
+  ↳ app/controllers/pizzas_controller.rb:6:in `index'
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.3ms | Allocations: 5090)
+
+
+Started GET "//1" for ::1 at 2023-03-19 15:03:46 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/1"):
+  
+Started GET "/pizzas/1" for ::1 at 2023-03-19 15:04:00 +0300
+Processing by PizzasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPizza Load (0.4ms)[0m  [1m[34mSELECT "pizzas".* FROM "pizzas" WHERE "pizzas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/pizzas_controller.rb:11:in `show'
+Completed 200 OK in 4ms (Views: 0.5ms | ActiveRecord: 0.4ms | Allocations: 860)
+
+
