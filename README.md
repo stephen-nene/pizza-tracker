@@ -47,7 +47,7 @@
 ### A. <u>pizza</u>
 
 1. ` GET /pizzas`
-2.
+2. `GET /pizzas/:id`
 
 
 ### B. <u>Restaurant</u>
