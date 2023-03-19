@@ -6,3 +6,4 @@ class PizzasController < ApplicationController
   end
 
 end
+
