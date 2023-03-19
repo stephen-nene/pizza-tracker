@@ -5986,3 +5986,701 @@ Processing by RestaurantsController#show as HTML
 Completed 200 OK in 7ms (Views: 0.8ms | ActiveRecord: 0.2ms | Allocations: 2553)
 
 
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mRestaurantPizza Load (0.5ms)[0m  [1m[34mSELECT "restaurant_pizzas".* FROM "restaurant_pizzas"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.3ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 11]]
+  [1m[36mTRANSACTION (4.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.3ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 12]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.2ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 13]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.3ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 14]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.3ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 15]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.3ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 16]]
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.3ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 17]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.3ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 18]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.3ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 19]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.3ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 20]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.3ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 21]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.2ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 22]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.2ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 23]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.2ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 24]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.2ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 25]]
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.2ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 26]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.2ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 27]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.2ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 28]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.3ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 29]]
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.4ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 30]]
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.4ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 31]]
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.5ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 32]]
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.4ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 33]]
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.3ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 34]]
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.4ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 35]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.3ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 36]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.3ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 37]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.4ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 38]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.3ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 39]]
+  [1m[36mTRANSACTION (3.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.3ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 40]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.3ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 41]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.3ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 42]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.2ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 43]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.2ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 44]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.2ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 45]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.2ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 46]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.2ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 47]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.2ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 48]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.2ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 49]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.2ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 50]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.2ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 51]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.3ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 52]]
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.3ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 53]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.2ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 54]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.2ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 55]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.2ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 56]]
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.2ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 57]]
+  [1m[36mTRANSACTION (2.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.3ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 58]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.2ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 59]]
+  [1m[36mTRANSACTION (21.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.4ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 60]]
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.4ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 61]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.4ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 62]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.4ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 63]]
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.4ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 64]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.4ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 65]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.4ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 66]]
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.2ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 67]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.3ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 68]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.3ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 69]]
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.3ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 70]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.3ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 71]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.3ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 72]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.2ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 73]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.3ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 74]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.2ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 75]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.2ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 76]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.2ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 77]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.2ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 78]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.2ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 79]]
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.4ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 80]]
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.6ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 81]]
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.5ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 82]]
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.4ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 83]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.3ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 84]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.3ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 85]]
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.3ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 86]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.3ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 87]]
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.4ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 88]]
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.3ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 89]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.3ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 90]]
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.3ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 91]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.3ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 92]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.3ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 93]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.3ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 94]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.4ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 95]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.2ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 96]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.2ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 97]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.2ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 98]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.3ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 99]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.3ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 100]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Destroy (0.2ms)[0m  [1m[31mDELETE FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."id" = ?[0m  [["id", 104]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurant Destroy (0.3ms)[0m  [1m[31mDELETE FROM "restaurants" WHERE "restaurants"."id" = ?[0m  [["id", 2]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurant Destroy (0.2ms)[0m  [1m[31mDELETE FROM "restaurants" WHERE "restaurants"."id" = ?[0m  [["id", 3]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurant Destroy (0.2ms)[0m  [1m[31mDELETE FROM "restaurants" WHERE "restaurants"."id" = ?[0m  [["id", 4]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurant Destroy (0.2ms)[0m  [1m[31mDELETE FROM "restaurants" WHERE "restaurants"."id" = ?[0m  [["id", 5]]
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurant Destroy (0.2ms)[0m  [1m[31mDELETE FROM "restaurants" WHERE "restaurants"."id" = ?[0m  [["id", 6]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurant Destroy (0.2ms)[0m  [1m[31mDELETE FROM "restaurants" WHERE "restaurants"."id" = ?[0m  [["id", 7]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurant Destroy (0.2ms)[0m  [1m[31mDELETE FROM "restaurants" WHERE "restaurants"."id" = ?[0m  [["id", 8]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurant Destroy (0.2ms)[0m  [1m[31mDELETE FROM "restaurants" WHERE "restaurants"."id" = ?[0m  [["id", 9]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurant Destroy (0.3ms)[0m  [1m[31mDELETE FROM "restaurants" WHERE "restaurants"."id" = ?[0m  [["id", 10]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPizza Load (0.2ms)[0m  [1m[34mSELECT "pizzas".* FROM "pizzas"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPizza Destroy (0.3ms)[0m  [1m[31mDELETE FROM "pizzas" WHERE "pizzas"."id" = ?[0m  [["id", 1]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPizza Destroy (0.3ms)[0m  [1m[31mDELETE FROM "pizzas" WHERE "pizzas"."id" = ?[0m  [["id", 2]]
+  [1m[36mTRANSACTION (2.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPizza Destroy (0.3ms)[0m  [1m[31mDELETE FROM "pizzas" WHERE "pizzas"."id" = ?[0m  [["id", 3]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPizza Destroy (0.2ms)[0m  [1m[31mDELETE FROM "pizzas" WHERE "pizzas"."id" = ?[0m  [["id", 4]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPizza Destroy (0.2ms)[0m  [1m[31mDELETE FROM "pizzas" WHERE "pizzas"."id" = ?[0m  [["id", 5]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPizza Destroy (0.2ms)[0m  [1m[31mDELETE FROM "pizzas" WHERE "pizzas"."id" = ?[0m  [["id", 6]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPizza Destroy (0.2ms)[0m  [1m[31mDELETE FROM "pizzas" WHERE "pizzas"."id" = ?[0m  [["id", 7]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPizza Destroy (0.2ms)[0m  [1m[31mDELETE FROM "pizzas" WHERE "pizzas"."id" = ?[0m  [["id", 8]]
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPizza Destroy (0.2ms)[0m  [1m[31mDELETE FROM "pizzas" WHERE "pizzas"."id" = ?[0m  [["id", 9]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPizza Destroy (0.2ms)[0m  [1m[31mDELETE FROM "pizzas" WHERE "pizzas"."id" = ?[0m  [["id", 10]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "pizzas" ("name", "ingredients", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Bruschette with Tomato"], ["ingredients", "Brie"], ["created_at", "2023-03-19 13:18:18.051766"], ["updated_at", "2023-03-19 13:18:18.051766"]]
+  [1m[36mTRANSACTION (3.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPizza Create (0.2ms)[0m  [1m[32mINSERT INTO "pizzas" ("name", "ingredients", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Bruschette with Tomato"], ["ingredients", "Coriander Seed"], ["created_at", "2023-03-19 13:18:18.061744"], ["updated_at", "2023-03-19 13:18:18.061744"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPizza Create (0.2ms)[0m  [1m[32mINSERT INTO "pizzas" ("name", "ingredients", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Poutine"], ["ingredients", "Spring Onions"], ["created_at", "2023-03-19 13:18:18.067159"], ["updated_at", "2023-03-19 13:18:18.067159"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPizza Create (0.2ms)[0m  [1m[32mINSERT INTO "pizzas" ("name", "ingredients", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Ricotta Stuffed Ravioli"], ["ingredients", "Pears"], ["created_at", "2023-03-19 13:18:18.072538"], ["updated_at", "2023-03-19 13:18:18.072538"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPizza Create (0.2ms)[0m  [1m[32mINSERT INTO "pizzas" ("name", "ingredients", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Kebab"], ["ingredients", "Currants"], ["created_at", "2023-03-19 13:18:18.077876"], ["updated_at", "2023-03-19 13:18:18.077876"]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPizza Create (0.2ms)[0m  [1m[32mINSERT INTO "pizzas" ("name", "ingredients", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Caprese Salad"], ["ingredients", "Barramundi"], ["created_at", "2023-03-19 13:18:18.083245"], ["updated_at", "2023-03-19 13:18:18.083245"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPizza Create (0.2ms)[0m  [1m[32mINSERT INTO "pizzas" ("name", "ingredients", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Pork Belly Buns"], ["ingredients", "Anchovies"], ["created_at", "2023-03-19 13:18:18.088581"], ["updated_at", "2023-03-19 13:18:18.088581"]]
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPizza Create (0.2ms)[0m  [1m[32mINSERT INTO "pizzas" ("name", "ingredients", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mushroom Risotto"], ["ingredients", "Salmon"], ["created_at", "2023-03-19 13:18:18.094142"], ["updated_at", "2023-03-19 13:18:18.094142"]]
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPizza Create (0.2ms)[0m  [1m[32mINSERT INTO "pizzas" ("name", "ingredients", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Pork Belly Buns"], ["ingredients", "Fennel Seeds"], ["created_at", "2023-03-19 13:18:18.100089"], ["updated_at", "2023-03-19 13:18:18.100089"]]
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPizza Create (0.2ms)[0m  [1m[32mINSERT INTO "pizzas" ("name", "ingredients", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Philadelphia Maki"], ["ingredients", "Lobster"], ["created_at", "2023-03-19 13:18:18.105928"], ["updated_at", "2023-03-19 13:18:18.105928"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurant Create (0.2ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Lang LLC"], ["address", "41896 Lubowitz Manor"], ["created_at", "2023-03-19 13:18:18.112037"], ["updated_at", "2023-03-19 13:18:18.112037"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurant Create (0.2ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Ebert, Jaskolski and Kuhn"], ["address", "2138 Nella Port"], ["created_at", "2023-03-19 13:18:18.118245"], ["updated_at", "2023-03-19 13:18:18.118245"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurant Create (0.2ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Sawayn, Nader and O'Keefe"], ["address", "217 Efren Island"], ["created_at", "2023-03-19 13:18:18.124269"], ["updated_at", "2023-03-19 13:18:18.124269"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Johnson LLC"], ["address", "845 Borer Park"], ["created_at", "2023-03-19 13:18:18.130367"], ["updated_at", "2023-03-19 13:18:18.130367"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Luettgen-Schoen"], ["address", "6633 Bins Viaduct"], ["created_at", "2023-03-19 13:18:18.136606"], ["updated_at", "2023-03-19 13:18:18.136606"]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Block-Gislason"], ["address", "14121 Carroll Course"], ["created_at", "2023-03-19 13:18:18.142738"], ["updated_at", "2023-03-19 13:18:18.142738"]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurant Create (0.2ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Haag, King and Towne"], ["address", "938 Hilpert Square"], ["created_at", "2023-03-19 13:18:18.149027"], ["updated_at", "2023-03-19 13:18:18.149027"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Kunze Group"], ["address", "1580 Karri Junctions"], ["created_at", "2023-03-19 13:18:18.155283"], ["updated_at", "2023-03-19 13:18:18.155283"]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Hane Group"], ["address", "702 Georgeann Knolls"], ["created_at", "2023-03-19 13:18:18.164144"], ["updated_at", "2023-03-19 13:18:18.164144"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Gleason-Cremin"], ["address", "3216 Gusikowski Islands"], ["created_at", "2023-03-19 13:18:18.172568"], ["updated_at", "2023-03-19 13:18:18.172568"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  [1m[36mPizza Load (0.1ms)[0m  [1m[34mSELECT "pizzas".* FROM "pizzas"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.5ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 22.35], ["restaurant_id", 11], ["pizza_id", 11], ["created_at", "2023-03-19 13:18:18.195074"], ["updated_at", "2023-03-19 13:18:18.195074"]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 16.94], ["restaurant_id", 11], ["pizza_id", 12], ["created_at", "2023-03-19 13:18:18.203691"], ["updated_at", "2023-03-19 13:18:18.203691"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 25.31], ["restaurant_id", 11], ["pizza_id", 13], ["created_at", "2023-03-19 13:18:18.211623"], ["updated_at", "2023-03-19 13:18:18.211623"]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.4ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 17.42], ["restaurant_id", 11], ["pizza_id", 14], ["created_at", "2023-03-19 13:18:18.219823"], ["updated_at", "2023-03-19 13:18:18.219823"]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.5ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 26.1], ["restaurant_id", 11], ["pizza_id", 15], ["created_at", "2023-03-19 13:18:18.228219"], ["updated_at", "2023-03-19 13:18:18.228219"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 28.68], ["restaurant_id", 11], ["pizza_id", 16], ["created_at", "2023-03-19 13:18:18.236845"], ["updated_at", "2023-03-19 13:18:18.236845"]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.4ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 11.13], ["restaurant_id", 11], ["pizza_id", 17], ["created_at", "2023-03-19 13:18:18.245250"], ["updated_at", "2023-03-19 13:18:18.245250"]]
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 24.65], ["restaurant_id", 11], ["pizza_id", 18], ["created_at", "2023-03-19 13:18:18.275161"], ["updated_at", "2023-03-19 13:18:18.275161"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 16.96], ["restaurant_id", 11], ["pizza_id", 19], ["created_at", "2023-03-19 13:18:18.281090"], ["updated_at", "2023-03-19 13:18:18.281090"]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 21.96], ["restaurant_id", 11], ["pizza_id", 20], ["created_at", "2023-03-19 13:18:18.286900"], ["updated_at", "2023-03-19 13:18:18.286900"]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 18.0], ["restaurant_id", 12], ["pizza_id", 11], ["created_at", "2023-03-19 13:18:18.318702"], ["updated_at", "2023-03-19 13:18:18.318702"]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 25.43], ["restaurant_id", 12], ["pizza_id", 12], ["created_at", "2023-03-19 13:18:18.326331"], ["updated_at", "2023-03-19 13:18:18.326331"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 11.24], ["restaurant_id", 12], ["pizza_id", 13], ["created_at", "2023-03-19 13:18:18.333187"], ["updated_at", "2023-03-19 13:18:18.333187"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 27.35], ["restaurant_id", 12], ["pizza_id", 14], ["created_at", "2023-03-19 13:18:18.341065"], ["updated_at", "2023-03-19 13:18:18.341065"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 24.31], ["restaurant_id", 12], ["pizza_id", 15], ["created_at", "2023-03-19 13:18:18.349285"], ["updated_at", "2023-03-19 13:18:18.349285"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 13.63], ["restaurant_id", 12], ["pizza_id", 16], ["created_at", "2023-03-19 13:18:18.356856"], ["updated_at", "2023-03-19 13:18:18.356856"]]
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 28.98], ["restaurant_id", 12], ["pizza_id", 17], ["created_at", "2023-03-19 13:18:18.365450"], ["updated_at", "2023-03-19 13:18:18.365450"]]
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 11.18], ["restaurant_id", 12], ["pizza_id", 18], ["created_at", "2023-03-19 13:18:18.373397"], ["updated_at", "2023-03-19 13:18:18.373397"]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 21.86], ["restaurant_id", 12], ["pizza_id", 19], ["created_at", "2023-03-19 13:18:18.381168"], ["updated_at", "2023-03-19 13:18:18.381168"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 14.8], ["restaurant_id", 12], ["pizza_id", 20], ["created_at", "2023-03-19 13:18:18.388881"], ["updated_at", "2023-03-19 13:18:18.388881"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 29.35], ["restaurant_id", 13], ["pizza_id", 11], ["created_at", "2023-03-19 13:18:18.396071"], ["updated_at", "2023-03-19 13:18:18.396071"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 18.06], ["restaurant_id", 13], ["pizza_id", 12], ["created_at", "2023-03-19 13:18:18.404132"], ["updated_at", "2023-03-19 13:18:18.404132"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 22.96], ["restaurant_id", 13], ["pizza_id", 13], ["created_at", "2023-03-19 13:18:18.411796"], ["updated_at", "2023-03-19 13:18:18.411796"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 17.61], ["restaurant_id", 13], ["pizza_id", 14], ["created_at", "2023-03-19 13:18:18.419828"], ["updated_at", "2023-03-19 13:18:18.419828"]]
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.5ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 27.15], ["restaurant_id", 13], ["pizza_id", 15], ["created_at", "2023-03-19 13:18:18.433714"], ["updated_at", "2023-03-19 13:18:18.433714"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 14.98], ["restaurant_id", 13], ["pizza_id", 16], ["created_at", "2023-03-19 13:18:18.440820"], ["updated_at", "2023-03-19 13:18:18.440820"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 18.1], ["restaurant_id", 13], ["pizza_id", 17], ["created_at", "2023-03-19 13:18:18.446472"], ["updated_at", "2023-03-19 13:18:18.446472"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 29.76], ["restaurant_id", 13], ["pizza_id", 18], ["created_at", "2023-03-19 13:18:18.452175"], ["updated_at", "2023-03-19 13:18:18.452175"]]
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.5ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 26.99], ["restaurant_id", 13], ["pizza_id", 19], ["created_at", "2023-03-19 13:18:18.458830"], ["updated_at", "2023-03-19 13:18:18.458830"]]
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.4ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 14.07], ["restaurant_id", 13], ["pizza_id", 20], ["created_at", "2023-03-19 13:18:18.467204"], ["updated_at", "2023-03-19 13:18:18.467204"]]
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.5ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 25.53], ["restaurant_id", 14], ["pizza_id", 11], ["created_at", "2023-03-19 13:18:18.475622"], ["updated_at", "2023-03-19 13:18:18.475622"]]
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.5ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 14.32], ["restaurant_id", 14], ["pizza_id", 12], ["created_at", "2023-03-19 13:18:18.484183"], ["updated_at", "2023-03-19 13:18:18.484183"]]
+  [1m[36mTRANSACTION (2.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.5ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 13.66], ["restaurant_id", 14], ["pizza_id", 13], ["created_at", "2023-03-19 13:18:18.493937"], ["updated_at", "2023-03-19 13:18:18.493937"]]
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.5ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 12.76], ["restaurant_id", 14], ["pizza_id", 14], ["created_at", "2023-03-19 13:18:18.504943"], ["updated_at", "2023-03-19 13:18:18.504943"]]
+  [1m[36mTRANSACTION (2.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.5ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 26.71], ["restaurant_id", 14], ["pizza_id", 15], ["created_at", "2023-03-19 13:18:18.515941"], ["updated_at", "2023-03-19 13:18:18.515941"]]
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.5ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 22.47], ["restaurant_id", 14], ["pizza_id", 16], ["created_at", "2023-03-19 13:18:18.526548"], ["updated_at", "2023-03-19 13:18:18.526548"]]
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.5ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 29.31], ["restaurant_id", 14], ["pizza_id", 17], ["created_at", "2023-03-19 13:18:18.536990"], ["updated_at", "2023-03-19 13:18:18.536990"]]
+  [1m[36mTRANSACTION (2.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.5ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 19.59], ["restaurant_id", 14], ["pizza_id", 18], ["created_at", "2023-03-19 13:18:18.548062"], ["updated_at", "2023-03-19 13:18:18.548062"]]
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 25.53], ["restaurant_id", 14], ["pizza_id", 19], ["created_at", "2023-03-19 13:18:18.558313"], ["updated_at", "2023-03-19 13:18:18.558313"]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 10.86], ["restaurant_id", 14], ["pizza_id", 20], ["created_at", "2023-03-19 13:18:18.566120"], ["updated_at", "2023-03-19 13:18:18.566120"]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 17.41], ["restaurant_id", 15], ["pizza_id", 11], ["created_at", "2023-03-19 13:18:18.574005"], ["updated_at", "2023-03-19 13:18:18.574005"]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 18.47], ["restaurant_id", 15], ["pizza_id", 12], ["created_at", "2023-03-19 13:18:18.581754"], ["updated_at", "2023-03-19 13:18:18.581754"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 15.11], ["restaurant_id", 15], ["pizza_id", 13], ["created_at", "2023-03-19 13:18:18.589537"], ["updated_at", "2023-03-19 13:18:18.589537"]]
+  [1m[36mTRANSACTION (2.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 24.55], ["restaurant_id", 15], ["pizza_id", 14], ["created_at", "2023-03-19 13:18:18.611712"], ["updated_at", "2023-03-19 13:18:18.611712"]]
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 17.1], ["restaurant_id", 15], ["pizza_id", 15], ["created_at", "2023-03-19 13:18:18.619543"], ["updated_at", "2023-03-19 13:18:18.619543"]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.5ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 25.92], ["restaurant_id", 15], ["pizza_id", 16], ["created_at", "2023-03-19 13:18:18.627558"], ["updated_at", "2023-03-19 13:18:18.627558"]]
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 26.3], ["restaurant_id", 15], ["pizza_id", 17], ["created_at", "2023-03-19 13:18:18.636178"], ["updated_at", "2023-03-19 13:18:18.636178"]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 10.48], ["restaurant_id", 15], ["pizza_id", 18], ["created_at", "2023-03-19 13:18:18.644120"], ["updated_at", "2023-03-19 13:18:18.644120"]]
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 23.8], ["restaurant_id", 15], ["pizza_id", 19], ["created_at", "2023-03-19 13:18:18.652219"], ["updated_at", "2023-03-19 13:18:18.652219"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 23.01], ["restaurant_id", 15], ["pizza_id", 20], ["created_at", "2023-03-19 13:18:18.660202"], ["updated_at", "2023-03-19 13:18:18.660202"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 24.57], ["restaurant_id", 16], ["pizza_id", 11], ["created_at", "2023-03-19 13:18:18.668298"], ["updated_at", "2023-03-19 13:18:18.668298"]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 25.11], ["restaurant_id", 16], ["pizza_id", 12], ["created_at", "2023-03-19 13:18:18.676598"], ["updated_at", "2023-03-19 13:18:18.676598"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 26.61], ["restaurant_id", 16], ["pizza_id", 13], ["created_at", "2023-03-19 13:18:18.684625"], ["updated_at", "2023-03-19 13:18:18.684625"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 13.31], ["restaurant_id", 16], ["pizza_id", 14], ["created_at", "2023-03-19 13:18:18.693182"], ["updated_at", "2023-03-19 13:18:18.693182"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 24.13], ["restaurant_id", 16], ["pizza_id", 15], ["created_at", "2023-03-19 13:18:18.701593"], ["updated_at", "2023-03-19 13:18:18.701593"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 15.28], ["restaurant_id", 16], ["pizza_id", 16], ["created_at", "2023-03-19 13:18:18.709764"], ["updated_at", "2023-03-19 13:18:18.709764"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.4ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 15.91], ["restaurant_id", 16], ["pizza_id", 17], ["created_at", "2023-03-19 13:18:18.718488"], ["updated_at", "2023-03-19 13:18:18.718488"]]
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 19.64], ["restaurant_id", 16], ["pizza_id", 18], ["created_at", "2023-03-19 13:18:18.730874"], ["updated_at", "2023-03-19 13:18:18.730874"]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 11.96], ["restaurant_id", 16], ["pizza_id", 19], ["created_at", "2023-03-19 13:18:18.737857"], ["updated_at", "2023-03-19 13:18:18.737857"]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 21.76], ["restaurant_id", 16], ["pizza_id", 20], ["created_at", "2023-03-19 13:18:18.746060"], ["updated_at", "2023-03-19 13:18:18.746060"]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 12.95], ["restaurant_id", 17], ["pizza_id", 11], ["created_at", "2023-03-19 13:18:18.754213"], ["updated_at", "2023-03-19 13:18:18.754213"]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 24.9], ["restaurant_id", 17], ["pizza_id", 12], ["created_at", "2023-03-19 13:18:18.762198"], ["updated_at", "2023-03-19 13:18:18.762198"]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 14.86], ["restaurant_id", 17], ["pizza_id", 13], ["created_at", "2023-03-19 13:18:18.770179"], ["updated_at", "2023-03-19 13:18:18.770179"]]
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 24.22], ["restaurant_id", 17], ["pizza_id", 14], ["created_at", "2023-03-19 13:18:18.778294"], ["updated_at", "2023-03-19 13:18:18.778294"]]
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 25.66], ["restaurant_id", 17], ["pizza_id", 15], ["created_at", "2023-03-19 13:18:18.786621"], ["updated_at", "2023-03-19 13:18:18.786621"]]
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 22.75], ["restaurant_id", 17], ["pizza_id", 16], ["created_at", "2023-03-19 13:18:18.795709"], ["updated_at", "2023-03-19 13:18:18.795709"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.4ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 25.4], ["restaurant_id", 17], ["pizza_id", 17], ["created_at", "2023-03-19 13:18:18.803550"], ["updated_at", "2023-03-19 13:18:18.803550"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.4ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 10.07], ["restaurant_id", 17], ["pizza_id", 18], ["created_at", "2023-03-19 13:18:18.811666"], ["updated_at", "2023-03-19 13:18:18.811666"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 18.88], ["restaurant_id", 17], ["pizza_id", 19], ["created_at", "2023-03-19 13:18:18.820287"], ["updated_at", "2023-03-19 13:18:18.820287"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 15.34], ["restaurant_id", 17], ["pizza_id", 20], ["created_at", "2023-03-19 13:18:18.828302"], ["updated_at", "2023-03-19 13:18:18.828302"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.5ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 20.0], ["restaurant_id", 18], ["pizza_id", 11], ["created_at", "2023-03-19 13:18:18.836616"], ["updated_at", "2023-03-19 13:18:18.836616"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.4ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 16.1], ["restaurant_id", 18], ["pizza_id", 12], ["created_at", "2023-03-19 13:18:18.847508"], ["updated_at", "2023-03-19 13:18:18.847508"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 11.0], ["restaurant_id", 18], ["pizza_id", 13], ["created_at", "2023-03-19 13:18:18.860463"], ["updated_at", "2023-03-19 13:18:18.860463"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 29.27], ["restaurant_id", 18], ["pizza_id", 14], ["created_at", "2023-03-19 13:18:18.867454"], ["updated_at", "2023-03-19 13:18:18.867454"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 20.36], ["restaurant_id", 18], ["pizza_id", 15], ["created_at", "2023-03-19 13:18:18.875073"], ["updated_at", "2023-03-19 13:18:18.875073"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 23.85], ["restaurant_id", 18], ["pizza_id", 16], ["created_at", "2023-03-19 13:18:18.882703"], ["updated_at", "2023-03-19 13:18:18.882703"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 10.83], ["restaurant_id", 18], ["pizza_id", 17], ["created_at", "2023-03-19 13:18:18.890671"], ["updated_at", "2023-03-19 13:18:18.890671"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 13.7], ["restaurant_id", 18], ["pizza_id", 18], ["created_at", "2023-03-19 13:18:18.899233"], ["updated_at", "2023-03-19 13:18:18.899233"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 15.39], ["restaurant_id", 18], ["pizza_id", 19], ["created_at", "2023-03-19 13:18:18.907641"], ["updated_at", "2023-03-19 13:18:18.907641"]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 24.82], ["restaurant_id", 18], ["pizza_id", 20], ["created_at", "2023-03-19 13:18:18.916071"], ["updated_at", "2023-03-19 13:18:18.916071"]]
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 20.3], ["restaurant_id", 19], ["pizza_id", 11], ["created_at", "2023-03-19 13:18:18.924996"], ["updated_at", "2023-03-19 13:18:18.924996"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 11.45], ["restaurant_id", 19], ["pizza_id", 12], ["created_at", "2023-03-19 13:18:18.933324"], ["updated_at", "2023-03-19 13:18:18.933324"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.5ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 24.88], ["restaurant_id", 19], ["pizza_id", 13], ["created_at", "2023-03-19 13:18:18.941608"], ["updated_at", "2023-03-19 13:18:18.941608"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 23.01], ["restaurant_id", 19], ["pizza_id", 14], ["created_at", "2023-03-19 13:18:18.949831"], ["updated_at", "2023-03-19 13:18:18.949831"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 14.4], ["restaurant_id", 19], ["pizza_id", 15], ["created_at", "2023-03-19 13:18:18.960381"], ["updated_at", "2023-03-19 13:18:18.960381"]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 18.44], ["restaurant_id", 19], ["pizza_id", 16], ["created_at", "2023-03-19 13:18:18.967003"], ["updated_at", "2023-03-19 13:18:18.967003"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 27.29], ["restaurant_id", 19], ["pizza_id", 17], ["created_at", "2023-03-19 13:18:18.972793"], ["updated_at", "2023-03-19 13:18:18.972793"]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.4ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 11.45], ["restaurant_id", 19], ["pizza_id", 18], ["created_at", "2023-03-19 13:18:18.978542"], ["updated_at", "2023-03-19 13:18:18.978542"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 23.09], ["restaurant_id", 19], ["pizza_id", 19], ["created_at", "2023-03-19 13:18:18.984518"], ["updated_at", "2023-03-19 13:18:18.984518"]]
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.9ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 17.61], ["restaurant_id", 19], ["pizza_id", 20], ["created_at", "2023-03-19 13:18:18.991052"], ["updated_at", "2023-03-19 13:18:18.991052"]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 20.28], ["restaurant_id", 20], ["pizza_id", 11], ["created_at", "2023-03-19 13:18:18.999441"], ["updated_at", "2023-03-19 13:18:18.999441"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 12.92], ["restaurant_id", 20], ["pizza_id", 12], ["created_at", "2023-03-19 13:18:19.007679"], ["updated_at", "2023-03-19 13:18:19.007679"]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 26.8], ["restaurant_id", 20], ["pizza_id", 13], ["created_at", "2023-03-19 13:18:19.015799"], ["updated_at", "2023-03-19 13:18:19.015799"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 24.38], ["restaurant_id", 20], ["pizza_id", 14], ["created_at", "2023-03-19 13:18:19.024166"], ["updated_at", "2023-03-19 13:18:19.024166"]]
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.5ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 28.03], ["restaurant_id", 20], ["pizza_id", 15], ["created_at", "2023-03-19 13:18:19.033457"], ["updated_at", "2023-03-19 13:18:19.033457"]]
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 10.89], ["restaurant_id", 20], ["pizza_id", 16], ["created_at", "2023-03-19 13:18:19.044150"], ["updated_at", "2023-03-19 13:18:19.044150"]]
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 27.25], ["restaurant_id", 20], ["pizza_id", 17], ["created_at", "2023-03-19 13:18:19.053404"], ["updated_at", "2023-03-19 13:18:19.053404"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 27.82], ["restaurant_id", 20], ["pizza_id", 18], ["created_at", "2023-03-19 13:18:19.062237"], ["updated_at", "2023-03-19 13:18:19.062237"]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 27.81], ["restaurant_id", 20], ["pizza_id", 19], ["created_at", "2023-03-19 13:18:19.071331"], ["updated_at", "2023-03-19 13:18:19.071331"]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurantPizza Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 25.14], ["restaurant_id", 20], ["pizza_id", 20], ["created_at", "2023-03-19 13:18:19.080618"], ["updated_at", "2023-03-19 13:18:19.080618"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
