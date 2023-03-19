@@ -54,7 +54,7 @@
 ### B. <u>Restaurant</u>
 1. `GET /restaurants`
 2. `GET /restaurants/:id`
-4. `POST /restaurants` -not done
+4. `POST /restaurants`
 3. `DELETE /restaurants/:id`
 
 
@@ -63,10 +63,11 @@
 1. `GET /restaurants/:id/pizzas`
 2. `GET /restaurants/:id/pizzas/:id`
 3. `POST /restaurant_pizzas`
-4. `DELETE /restaurant_pizzas` -not done
+4. `DELETE /restaurant_pizzas`
 
 # Contributor
   - [ ![BuiltBy](https://img.shields.io/badge/Built-By-GE7A10?style=flat-square&logo=BuzzFeed&logoColor=white)](https://github.com/stephen-nene)
    **[stevo-nene](https://github.com/stephen-nene)**
 
 # License
+ - **NeneCorp** <span>&copy;</span>
