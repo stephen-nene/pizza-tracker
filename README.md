@@ -55,26 +55,39 @@
 # Routes
 
 ### A. <u>pizza</u>
+- These are HTTP methods used for interacting with a hypothetical API that deals with pizza-related data. Here's a breakdown of each one:
 
-1. ` GET /pizzas`
-2. `GET /pizzas/:id`
-3. `POST /pizzas`
-4. `DELETE /pizzas/:id`
+1. **` GET /pizzas`**
+    - This API endpoint retrieves a list of all available pizzas. The **HTTP GET** method is used to request data from the server, and the /pizzas endpoint specifies the resource being requested.
+2. **`GET /pizzas/:id`**
+   -  This API endpoint retrieves a specific pizza with the provided ID. The `:id` parameter in the endpoint is a placeholder for a unique identifier for the pizza. For example, `GET /pizzas/1` would retrieve the pizza with ID 1.
+3. **`POST /pizzas`**
+    - This API endpoint is used to create a new pizza. The HTTP POST method is used to send data to the server, and the `/pizzas `endpoint specifies where the data should be sent. The data sent in the request body would contain the details of the new pizza.
+4. **`DELETE /pizzas/:id`**
+    -  This API endpoint deletes a specific pizza with the provided ID. The `:id` parameter in the endpoint is a placeholder for the unique identifier for the pizza to be deleted. For example, `DELETE /pizzas/1 `would delete the pizza with ID 1.
 
 
 ### B. <u>Restaurant</u>
-1. `GET /restaurants`
-2. `GET /restaurants/:id`
-4. `POST /restaurants`
-3. `DELETE /restaurants/:id`
+1. **`GET /restaurants`**
+    - This endpoint returns a list of all the restaurants available in the system. It return a json with the restaurant's name and address .
+2. **`GET /restaurants/:id`**
+    -  This endpoint returns a specific restaurant based on its ID. The ID is usually a unique identifier assigned to each restaurant in the system.  It return a json with the restaurant's name and address for that specific restaurant's id.
+4. **`POST /restaurants`**
+    - This endpoint is used to create a new restaurant in the system. The request includes information like the restaurant's name and address.
+3. **`DELETE /restaurants/:id`**
+    -  This endpoint is used to delete a specific restaurant based on its ID. The ID is usually a unique identifier assigned to each restaurant in the system. Once the request is processed, the restaurant will be removed from the system.
 
 
 
 ### C. <u>RestaurantPizza</u>
-1. `GET /restaurants/:id/pizzas`
-2. `GET /restaurants/:id/pizzas/:id`
-3. `POST /restaurant_pizzas`
-4. `DELETE /restaurant_pizzas`
+1. **`GET /restaurants/:id/pizzas`**
+    - This endpoint would retrieve all the pizzas of a specific restaurant with the given `id`.
+2. **`GET /restaurants/:id/pizzas/:id`**
+    -
+3. **`POST /restaurant_pizzas`**
+    -
+4. **`DELETE /restaurant_pizzas`**
+    -
 
 # Contributor
   - [ ![BuiltBy](https://img.shields.io/badge/Built-By-GE7A10?style=flat-square&logo=BuzzFeed&logoColor=white)](https://github.com/stephen-nene)
