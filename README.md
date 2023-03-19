@@ -54,7 +54,6 @@
 
 ### B. <u>Restaurant</u>
 1. `GET /restaurants`
-
 2. `GET /restaurants/:id`
 4. `POST /restaurants` -not done
 3. `DELETE /restaurants/:id`

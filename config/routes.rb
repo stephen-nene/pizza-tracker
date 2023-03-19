@@ -1,9 +1,14 @@
+
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-  resources :restaurants, only: [:index, :show, :destroy] do
+  # pizzas
+  resources :pizzas, only: [:index, :show, :create, :destroy]
+
+  # restaurants
+  resources :restaurants, only: [:index, :show, :create, :destroy] do
+    # nested resources for restaurant pizzas
     resources :pizzas, only: [:index, :show], controller: 'restaurant_pizzas'
   end
-  resources :pizzas, only: [:index, :show]
-  resources :restaurant_pizzas, only: [:create, :destroy]
 
+  # restaurant pizzas
+  resources :restaurant_pizzas, only: [:create]
 end

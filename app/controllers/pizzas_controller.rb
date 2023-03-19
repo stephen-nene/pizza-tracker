@@ -16,6 +16,13 @@ class PizzasController < ApplicationController
     end
   end
 
+  # POST /pizzas/:id
+  def create
+  end
+
+  #DELETE /pizzas/:id
+  def destroy
+  end
 
 end
 
