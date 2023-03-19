@@ -83,11 +83,11 @@
 1. **`GET /restaurants/:id/pizzas`**
     - This endpoint would retrieve all the pizzas of a specific restaurant with the given `id`.
 2. **`GET /restaurants/:id/pizzas/:id`**
-    -
+    - This endpoint would retrieve a specific pizza with the given `id` from a specific restaurant with the given `id`.
 3. **`POST /restaurant_pizzas`**
-    -
+    - This endpoint would create a new entry in the `restaurant_pizzas` table to link a pizza with a restaurant. The request payload would include the `restaurant_id` and `pizza_id`.
 4. **`DELETE /restaurant_pizzas`**
-    -
+    -  This endpoint would delete an entry from the `restaurant_pizzas` table to unlink a pizza from a restaurant. The request payload would include the `restaurant_id` and `pizza_id`.
 
 # Contributor
   - [ ![BuiltBy](https://img.shields.io/badge/Built-By-GE7A10?style=flat-square&logo=BuzzFeed&logoColor=white)](https://github.com/stephen-nene)
