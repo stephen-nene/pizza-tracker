@@ -35,7 +35,18 @@ class RestaurantPizzasController < ApplicationController
   end
 
   # POST /restaurant_pizzas
+  skip_before_action :verify_authenticity_token
   def create
+    @restaurant = Restaurant.find_by(id: params[:restaurant_id])
+    @pizza = Pizza.find_by(id: params[:pizza_id])
+
+    unless @restaurant && @pizza
+      error = {}
+      error[:restaurant] = "Restaurant not found" unless @restaurant
+      error[:pizza] = "Pizza not found" unless @pizza
+      render json: { errors: error }, status: :unprocessable_entity and return
+    end
+
     @restaurant_pizza = RestaurantPizza.new(pizza_params)
     if @restaurant_pizza.save
       render json: @restaurant_pizza.pizza.as_json(only: [:id, :name, :ingredients])
@@ -47,6 +58,6 @@ class RestaurantPizzasController < ApplicationController
   private
 
   def pizza_params
-    params.require(:restaurant_pizza).permit(:price, :pizza_id, :restaurant_id, :ingredients)
+    params.require(:restaurant_pizza).permit(:price, :pizza_id, :restaurant_id)
   end
 end
