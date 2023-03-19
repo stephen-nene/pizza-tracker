@@ -16,9 +16,16 @@ class PizzasController < ApplicationController
     end
   end
 
-  # POST /pizzas/:id
+  # POST /pizzas
+  skip_before_action :verify_authenticity_token
   def create
     @pizza = Pizza.new(pizza_params)
+
+    if @pizza.save
+      render json: @pizza, status: :created
+    else
+      render json: @pizza.errors, status: :unprocessable_entity
+    end
   end
 
   #DELETE /pizzas/:id
@@ -34,7 +41,7 @@ class PizzasController < ApplicationController
 
   private
   def pizza_params
-    params.permit(:name, :price, :ingredients)
+    params.permit(:name, :ingredients)
   end
 end
 
