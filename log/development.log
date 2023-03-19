@@ -4371,3 +4371,70 @@ Processing by RestaurantsController#index as HTML
 Completed 200 OK in 11ms (Views: 4.4ms | ActiveRecord: 0.7ms | Allocations: 6052)
 
 
+Started GET "/restaurant_pizzas" for ::1 at 2023-03-19 14:01:05 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/restaurant_pizzas"):
+  
+Started GET "/restaurants/3" for ::1 at 2023-03-19 14:01:34 +0300
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/restaurants_controller.rb:9:in `show'
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:9:in `show'
+Completed 200 OK in 11ms (Views: 0.7ms | ActiveRecord: 1.0ms | Allocations: 2320)
+
+
+Started GET "/restaurants/3/pizzas" for ::1 at 2023-03-19 14:01:39 +0300
+Processing by RestaurantPizzasController#index as HTML
+  Parameters: {"restaurant_id"=>"3"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/restaurant_pizzas_controller.rb:5:in `index'
+  [1m[36mPizza Load (0.2ms)[0m  [1m[34mSELECT "pizzas".* FROM "pizzas" INNER JOIN "restaurant_pizzas" ON "pizzas"."id" = "restaurant_pizzas"."pizza_id" WHERE "restaurant_pizzas"."restaurant_id" = ?[0m  [["restaurant_id", 3]]
+  ↳ app/controllers/restaurant_pizzas_controller.rb:9:in `index'
+  [1m[36mRestaurantPizza Load (0.2ms)[0m  [1m[34mSELECT "restaurant_pizzas".* FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."restaurant_id" = ?[0m  [["restaurant_id", 3]]
+  ↳ app/controllers/restaurant_pizzas_controller.rb:10:in `index'
+Completed 200 OK in 47ms (Views: 0.4ms | ActiveRecord: 1.1ms | Allocations: 19285)
+
+
+Started GET "/restaurants/3/pizzas" for 127.0.0.1 at 2023-03-19 14:10:58 +0300
+Processing by RestaurantPizzasController#index as */*
+  Parameters: {"restaurant_id"=>"3"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/restaurant_pizzas_controller.rb:5:in `index'
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/restaurant_pizzas_controller.rb:5:in `index'
+  [1m[36mPizza Load (0.3ms)[0m  [1m[34mSELECT "pizzas".* FROM "pizzas" INNER JOIN "restaurant_pizzas" ON "pizzas"."id" = "restaurant_pizzas"."pizza_id" WHERE "restaurant_pizzas"."restaurant_id" = ?[0m  [["restaurant_id", 3]]
+  ↳ app/controllers/restaurant_pizzas_controller.rb:9:in `index'
+  [1m[36mRestaurantPizza Load (0.2ms)[0m  [1m[34mSELECT "restaurant_pizzas".* FROM "restaurant_pizzas" WHERE "restaurant_pizzas"."restaurant_id" = ?[0m  [["restaurant_id", 3]]
+  ↳ app/controllers/restaurant_pizzas_controller.rb:10:in `index'
+Completed 200 OK in 25ms (Views: 0.4ms | ActiveRecord: 1.1ms | Allocations: 16507)
+
+
+Started GET "/restaurants" for 127.0.0.1 at 2023-03-19 14:11:53 +0300
+Processing by RestaurantsController#index as */*
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/controllers/restaurants_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.3ms | Allocations: 1709)
+
+
+Started GET "/restaurants/1" for 127.0.0.1 at 2023-03-19 14:11:56 +0300
+Processing by RestaurantsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:9:in `show'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 819)
+
+
+Started GET "/restaurant/1" for 127.0.0.1 at 2023-03-19 14:12:01 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/restaurant/1"):
+  
+Started GET "/restaurants/1" for 127.0.0.1 at 2023-03-19 14:12:06 +0300
+Processing by RestaurantsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:9:in `show'
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.2ms | Allocations: 640)
+
+

@@ -62,4 +62,5 @@
 
 
 ### C. <u>RestaurantPizza</u>
-1. `POST /restaurant_pizzas`
+1. `GET /restaurants/:id/pizzas`
+
