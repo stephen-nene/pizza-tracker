@@ -18,11 +18,23 @@ class PizzasController < ApplicationController
 
   # POST /pizzas/:id
   def create
+    @pizza = Pizza.new(pizza_params)
   end
 
   #DELETE /pizzas/:id
   def destroy
+    @pizza = Pizza.find_by(id: params[:id])
+    if @pizza
+      @pizza.destroy
+    else
+      render json: { error: 'Pizza not found' }, status: :not_found
+    end
   end
 
+
+  private
+  def pizza_params
+    params.permit(:name, :price, :ingredients)
+  end
 end
 

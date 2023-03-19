@@ -10212,3 +10212,20 @@ Migrating to CreatePizzas (20230318195436)
   [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
   [1m[36mRestaurantPizza Create (0.4ms)[0m  [1m[32mINSERT INTO "restaurant_pizzas" ("price", "restaurant_id", "pizza_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["price", 13.8], ["restaurant_id", 10], ["pizza_id", 10], ["created_at", "2023-03-19 14:25:17.781307"], ["updated_at", "2023-03-19 14:25:17.781307"]]
   [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/restaurants/21/pizzas/30" for ::1 at 2023-03-19 20:44:40 +0300
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RestaurantPizzasController#show as HTML
+  Parameters: {"restaurant_id"=>"21", "id"=>"30"}
+  [1m[36mRestaurant Load (0.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/restaurant_pizzas_controller.rb:16:in `show'
+Completed 404 Not Found in 32ms (Views: 1.3ms | ActiveRecord: 1.6ms | Allocations: 5995)
+
+
+Started GET "/pizzas" for ::1 at 2023-03-19 20:44:54 +0300
+Processing by PizzasController#index as HTML
+  [1m[36mPizza Load (0.5ms)[0m  [1m[34mSELECT "pizzas".* FROM "pizzas"[0m
+  ↳ app/controllers/pizzas_controller.rb:6:in `index'
+Completed 200 OK in 20ms (Views: 15.0ms | ActiveRecord: 1.5ms | Allocations: 4823)
+
+
