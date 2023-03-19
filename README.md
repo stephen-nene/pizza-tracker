@@ -48,13 +48,15 @@
 
 1. ` GET /pizzas`
 2. `GET /pizzas/:id`
+3. `POS /pizzas` -bado
+4. `DELETE /pizzas/:id`- bado
 
 
 ### B. <u>Restaurant</u>
 1. `GET /restaurants`
 
 2. `GET /restaurants/:id`
-
+4. `POST /restaurants` -not done
 3. `DELETE /restaurants/:id`
 
 
@@ -63,6 +65,7 @@
 1. `GET /restaurants/:id/pizzas`
 2. `GET /restaurants/:id/pizzas/:id`
 3. `POST /restaurant_pizzas`
+4. `DELETE /restaurant_pizzas` -not done
 
 # Contributor
 - **[steve-nene](https://github.com/stephen-nene)**
