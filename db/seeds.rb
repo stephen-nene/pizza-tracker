@@ -1,8 +1,11 @@
+puts "Destroying existing data"
 # Destroy existing records to ensure clean slate
 RestaurantPizza.destroy_all
 Restaurant.destroy_all
 Pizza.destroy_all
+puts "Done destroying existing data"
 
+puts "Seeding pizza table"
 # Seed Pizzas table
 10.times do
   ingredients = 4.times.map do
@@ -14,7 +17,7 @@ Pizza.destroy_all
   )
 end
 
-
+puts "Seeding restaurant table"
 # Seed Restaurants table
 10.times do
   Restaurant.create(
@@ -23,6 +26,7 @@ end
   )
 end
 
+puts "Seeding RestaurantPizzas table"
 # Seed RestaurantPizzas table
 restaurants = Restaurant.all
 pizzas = Pizza.all
@@ -36,3 +40,6 @@ restaurants.each do |restaurant|
     )
   end
 end
+puts "Seeding done now....."
+puts "Happy Hacking!  "
+
