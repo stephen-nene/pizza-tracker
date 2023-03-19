@@ -3,7 +3,7 @@
 ## Description
 - The Pizza Tracker API is designed to track the different types of pizzas offered by various restaurants. The application has three main resources - `Restaurant`, `Pizza`, and `RestaurantPizza`. The `Restaurant` model represents a restaurant that offers `pizzas`, while the Pizza model represents the different types of pizzas that can be ordered from restaurants. The `RestaurantPizza` model acts as a join table between the `Restaurant` and `Pizza` models, allowing for the association between the two.
 
-- This API will allow users to perform various **CRUD** operations such as adding new restaurants and pizzas, updating and deleting existing restaurants and pizzas, and retrieving information on specific restaurants and pizzas. However, this API is not intended to handle any payment processing or any other advanced features that may be required for a full-fledged e-commerce platform.
+- This API will allow users to perform various **CRUD** operations such as **adding** new `restaurants` and `pizzas`, **updating** and **deleting** existing `restaurants` and `pizzas`, and **retrieving** information on specific `restaurants` and `pizzas`. However, this API is not intended to handle any payment processing or any other advanced features that may be required for a full-fledged e-commerce platform.
 
 # Get-started
 1. First **fork** this repository to your github account.
@@ -48,7 +48,7 @@
 
 1. ` GET /pizzas`
 2. `GET /pizzas/:id`
-3. `POS /pizzas` -bado
+3. `POST /pizzas` -bado
 4. `DELETE /pizzas/:id`- bado
 
 
@@ -68,6 +68,7 @@
 4. `DELETE /restaurant_pizzas` -not done
 
 # Contributor
-- **[steve-nene](https://github.com/stephen-nene)**
+ <!-- ![BuiltBy](https://img.shields.io/badge/Built-By-GE7A10?style=flat-square&logo=BuzzFeed&logoColor=white)   -->
+   **[steve-nene](https://github.com/stephen-nene)**
 
 # License
